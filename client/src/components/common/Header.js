@@ -102,7 +102,7 @@ function Header() {
   };
   return (
     <>
-      <div className="promo-bar" id="topbar">
+      {/* <div className="promo-bar" id="topbar">
         <div className="container">
           <div id="slideText">
             <p>
@@ -127,7 +127,7 @@ function Header() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <header className="main-header">
         <div className="wrapper-header header-transparent " id="themes-header" style={{marginLeft: "-85px"}}>

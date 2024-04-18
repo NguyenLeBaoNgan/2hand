@@ -65,7 +65,7 @@ function Search() {
                         <div className="col-md-12 col-xs-12">
                             <div className="heading-page">
                                 <h1>Tìm kiếm</h1>
-                                <p className="subtxt">
+                                <p className="subtxt" >
                                     Có <span>{dataSearch.length} sản phẩm</span> cho tìm kiếm
                                 </p>
                             </div>

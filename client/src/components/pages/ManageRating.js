@@ -148,7 +148,7 @@ function ManageRating() {
 
                                         <div className="table-filter-info">
                                             <h1>QUẢN LÍ ĐÁNH GIÁ</h1>
-                                            <Pagination
+                                            {/* <Pagination
                                                 className="pagination-data"
                                                 showTotal={(total, range) => `Showing ${range[0]}-${range[1]} of ${total}`}
                                                 onChange={PaginationChange}
@@ -158,7 +158,7 @@ function ManageRating() {
                                                 showSizeChanger={false}
                                                 itemRender={PrevNextArrow}
                                                 onShowSizeChange={PerPageChange}
-                                            />
+                                            /> */}
                                             <div className="row">
                                                 <div className="col-md-3">
                                                     <div className="form-group">
@@ -212,7 +212,9 @@ function ManageRating() {
                                                             return (
                                                                 <tr key={data._id}>
                                                                     <td>{index + 1}</td>
-                                                                    <td>{data.user_id.firstname + " " + data.user_id.lastname}</td>
+                                                                    {/* <td>{data.user_id.firstname + " " + data.user_id.lastname}</td> */}
+                                                                    <td>{data.user_id && data.user_id.firstname + " " + data.user_id.lastname}</td>
+
                                                                     <td>{data.comment}</td>
                                                                     <td>{formatDate(data.created_at)}</td>
                                                                     <td>{data.rating}</td>

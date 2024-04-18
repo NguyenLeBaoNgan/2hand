@@ -100,7 +100,7 @@ function Login() {
                                     <div id="customer-login">
                                         <div id="login" className="userbox">
                                             <div className="clearfix large_form">
-                                                <label htmlFor="customer_email" className="icon-field">
+                                                <label htmlFor="customer_email" className="icon-field" >
                                                     <i className="icon-login icon-envelope " />
                                                 </label>
                                                 <input
@@ -109,7 +109,7 @@ function Login() {
                                                     name="customer[email]"
                                                     id="customer_email"
                                                     placeholder="Tên đăng nhập"
-                                                    className="text"
+                                                    className="text" 
                                                     value={username} onChange={e => setUsername(e.target.value)}
                                                 />
                                             </div>
@@ -137,13 +137,13 @@ function Login() {
                                                 </div>
                                                 <div className="req_pass">
                                                     <a
-                                                        style={{ cursor: 'pointer' }} onClick={() => sendOtp()}
+                                                        style={{ cursor: 'pointer' ,fontSize:'15px'}} onClick={() => sendOtp()}
                                                     >
                                                         Quên mật khẩu?
                                                     </a>
                                                     <br />
                                                     hoặc{" "}
-                                                    <a title="Đăng ký" href="/register">
+                                                    <a title="Đăng ký" href="/register" style={{fontSize:'15px'}}>
                                                         Đăng ký
                                                     </a>
                                                 </div>

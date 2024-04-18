@@ -125,11 +125,7 @@ const ManageProfile = () => {
                         <p className="card-text">Email: {email}</p>
                         <p className="card-text">Số điện thoại: {phone}</p>
                         <p className="card-text">Địa chỉ: {address}</p>
-                        <a
-                            style={{ cursor: "pointer" }}
-                            onClick={handleEditClick}
-                            className="btn btn-primary"
-                        >
+                        <a style={{ cursor: "pointer" }} onClick={handleEditClick} className="btn btn-primary">
                             Chỉnh sửa thông tin
                         </a>
                     </div>
